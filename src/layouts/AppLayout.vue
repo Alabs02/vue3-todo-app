@@ -25,6 +25,9 @@
   // COMPONENTS
   import ThemeButton from '@/components/core/ThemeButton.vue'
 
+  // HELPERS
+  import { imageUrl } from '@/utils/helpers';
+
   const {mapGetters} = createNamespacedHelpers('theme')
 
   export default defineComponent({
@@ -45,8 +48,8 @@
     methods: {
       getBannerPath(): string {
         return this.getIsDarkTheme
-          ? '/static/images/BG-MOBILE-DARK.svg'
-          : '/static/images/BG-MOBILE-LIGHT.svg'
+          ? imageUrl('/static/images/BG-MOBILE-DARK.svg')
+          : imageUrl('/static/images/BG-MOBILE-LIGHT.svg')
       }
     }
   })

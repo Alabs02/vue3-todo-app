@@ -10,7 +10,7 @@
         class="todo-card__circle-linear"
         @click="completedTask"
       >
-        <img src="/static/icons/ICON-CHECK.SVG" alt="check icon" />
+        <img :src="checkIcon" alt="check icon" />
       </div>
 
       <div v-else class="todo-card__circle" @click="completedTask"></div>
@@ -24,7 +24,7 @@
 
     <div class="todo-card__actions">
       <button class="todo-card__btn" @click="removeTask">
-        <img src="/static/icons/ICON-CROSS.SVG" alt="Remove Icon" />
+        <img :src="crossIcon" alt="Remove Icon" />
       </button>
     </div>
   </div>
@@ -32,6 +32,9 @@
 
 <script lang="ts">
   import {defineComponent} from 'vue'
+
+  // HELPERS
+  import { imageUrl } from '@/utils/helpers';
 
   export default defineComponent({
     name: 'TodoCard',
@@ -41,6 +44,13 @@
         type: Object,
         default: () => ({})
       }
+    },
+
+    data() {
+      return {
+        crossIcon: imageUrl('/static/icons/ICON-CROSS.SVG'),
+        checkIcon: imageUrl('/static/icons/ICON-CHECK.SVG')
+      };
     },
 
     methods: {

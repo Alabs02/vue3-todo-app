@@ -9,6 +9,9 @@
 
   import {createNamespacedHelpers} from 'vuex'
 
+  // HELPERS
+  import { imageUrl } from '@/utils/helpers';
+
   const {mapGetters, mapActions} = createNamespacedHelpers('theme')
 
   export default defineComponent({
@@ -19,8 +22,8 @@
 
       getIconPath(): string {
         return this.getIsDarkTheme
-          ? '/static/icons/ICON-SUN.svg'
-          : '/static/icons/ICON-MOON.SVG'
+          ? imageUrl('/static/icons/ICON-SUN.svg')
+          : imageUrl('/static/icons/ICON-MOON.SVG')
       }
     },
 
