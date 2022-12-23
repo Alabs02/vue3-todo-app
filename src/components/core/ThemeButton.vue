@@ -24,7 +24,7 @@
         return this.getIsDarkTheme
           ? imageUrl('/static/icons/ICON-SUN.SVG')
           : imageUrl('/static/icons/ICON-MOON.SVG')
-      },
+      }
     },
 
     methods: {
@@ -36,8 +36,8 @@
         const currentTheme = this.getIsDarkTheme ? 'dark' : 'light'
 
         localStorage.setItem('theme', currentTheme)
-      },
-    },
+      }
+    }
   })
 </script>
 

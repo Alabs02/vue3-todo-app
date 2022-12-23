@@ -42,14 +42,14 @@
     props: {
       todoTask: {
         type: Object,
-        default: () => ({}),
-      },
+        default: () => ({})
+      }
     },
 
     data() {
       return {
         crossIcon: imageUrl('/static/icons/ICON-CROSS.SVG'),
-        checkIcon: imageUrl('/static/icons/ICON-CHECK.SVG'),
+        checkIcon: imageUrl('/static/icons/ICON-CHECK.SVG')
       }
     },
 
@@ -60,8 +60,8 @@
 
       removeTask() {
         this.$emit('remove-task', this.todoTask.uuid)
-      },
-    },
+      }
+    }
   })
 </script>
 

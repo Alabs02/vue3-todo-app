@@ -14,7 +14,7 @@
     name: 'App',
 
     computed: {
-      ...mapGetters(['getIsDarkTheme']),
+      ...mapGetters(['getIsDarkTheme'])
     },
 
     mounted() {
@@ -40,8 +40,8 @@
           const currentTheme = localStorage.getItem('theme')
           this.toggleTheme(currentTheme === 'dark')
         }
-      },
-    },
+      }
+    }
   })
 </script>
 

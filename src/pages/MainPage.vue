@@ -96,7 +96,7 @@
       SearchBar,
       TodoCard,
       TextButton,
-      Draggable: VueDraggableNext,
+      Draggable: VueDraggableNext
     },
 
     data() {
@@ -106,8 +106,8 @@
         form: {
           uuid: '',
           task: '',
-          is_completed: false,
-        },
+          is_completed: false
+        }
       }
     },
 
@@ -141,8 +141,8 @@
         set(payload: any) {
           console.log({payload})
           this.updateElements(payload)
-        },
-      },
+        }
+      }
     },
 
     created() {
@@ -156,7 +156,7 @@
         'deleteTodoTask',
         'addTodoTask',
         'updateElements',
-        'deleteCompletedTodoTasks',
+        'deleteCompletedTodoTasks'
       ]),
 
       generateUUID(): string {
@@ -202,8 +202,8 @@
 
       log(event: any) {
         console.log({event})
-      },
-    },
+      }
+    }
   })
 </script>
 

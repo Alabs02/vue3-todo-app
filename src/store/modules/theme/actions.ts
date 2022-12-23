@@ -9,7 +9,7 @@ import {EMutations} from './mutations'
 const actions: ActionTree<ITheme.IThemeState, any> = {
   toggleTheme({commit}, payload: boolean) {
     commit(EMutations.SET_DARK_STATE, payload)
-  },
+  }
 }
 
 export default actions

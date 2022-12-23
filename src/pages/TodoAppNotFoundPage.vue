@@ -10,7 +10,7 @@
 
     created() {
       this.$router.replace('/')
-    },
+    }
   })
 </script>
 

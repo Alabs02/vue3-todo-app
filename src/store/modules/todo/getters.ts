@@ -10,7 +10,7 @@ const getters: GetterTree<ITodo.ITodoState, any> = {
 
   getAllTodoCount: (state): number => {
     return state.allTodoTasks.length
-  },
+  }
 }
 
 export default getters

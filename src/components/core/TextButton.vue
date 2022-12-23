@@ -4,7 +4,7 @@
     class="text-button font-medium"
     :class="{
       [getClasses]: true,
-      'text-button--active': isActive,
+      'text-button--active': isActive
     }"
     :disabled="disabled"
   >
@@ -21,27 +21,27 @@
     props: {
       copy: {
         type: String,
-        default: '',
+        default: ''
       },
       disabled: {
         type: Boolean,
-        default: false,
+        default: false
       },
       classes: {
         type: Array,
-        default: () => [],
+        default: () => []
       },
       isActive: {
         type: Boolean,
-        default: false,
-      },
+        default: false
+      }
     },
 
     computed: {
       getClasses() {
         return this.classes.join(' ')
-      },
-    },
+      }
+    }
   })
 </script>
 

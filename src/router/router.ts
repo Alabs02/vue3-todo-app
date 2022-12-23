@@ -13,10 +13,10 @@ const routes: RouteRecordRaw[] = [
         component: () =>
           import(/* webpackChunkName: "mainRoute" */ '@/pages/MainPage.vue'),
         meta: {
-          requiresAuth: false,
-        },
-      },
-    ],
+          requiresAuth: false
+        }
+      }
+    ]
   },
   {
     path: '/:pathMatch(.*)',
@@ -24,8 +24,8 @@ const routes: RouteRecordRaw[] = [
     component: () =>
       import(
         /* webpackChunkName: "ErrorRoute" */ '@/pages/TodoAppNotFoundPage.vue'
-      ),
-  },
+      )
+  }
 ]
 
 const router = createRouter({
@@ -35,15 +35,15 @@ const router = createRouter({
     if (to.hash)
       return {
         el: to.hash,
-        behavior: 'smooth',
+        behavior: 'smooth'
       }
     else if (savedPosition) return savedPosition
     else
       return {
         top: 0,
-        behavior: 'smooth',
+        behavior: 'smooth'
       }
-  },
+  }
 })
 
 export default router

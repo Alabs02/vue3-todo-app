@@ -13,8 +13,8 @@ const store = createStore({
   // STORE MODULES
   modules: {
     theme,
-    todo,
-  },
+    todo
+  }
 })
 
 export {store, isDevMode}

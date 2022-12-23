@@ -24,8 +24,8 @@
     props: {
       modelValue: {
         type: String,
-        default: '',
-      },
+        default: ''
+      }
     },
 
     methods: {
@@ -36,8 +36,8 @@
 
       createTodoTask() {
         this.$emit('add-task')
-      },
-    },
+      }
+    }
   })
 </script>
 

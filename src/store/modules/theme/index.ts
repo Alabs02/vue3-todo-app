@@ -10,7 +10,7 @@ const themeModule: Module<any, any> = {
   state,
   actions,
   getters,
-  mutations,
+  mutations
 }
 
 export default themeModule
