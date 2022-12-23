@@ -22,7 +22,7 @@
 
       getIconPath(): string {
         return this.getIsDarkTheme
-          ? imageUrl('/static/icons/ICON-SUN.svg')
+          ? imageUrl('/static/icons/ICON-SUN.SVG')
           : imageUrl('/static/icons/ICON-MOON.SVG')
       }
     },
