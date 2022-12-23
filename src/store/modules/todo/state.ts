@@ -1,6 +1,6 @@
 const initialState = (): any => {
   return {
-    allTodoTasks: []
+    allTodoTasks: [],
   }
 }
 

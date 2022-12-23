@@ -14,7 +14,7 @@ const actions: ActionTree<ITodo.ITodoState, any> = {
     const serializedTodoTasks: ITodo.ITodoTask[] = data.map((todo) => {
       return {
         uuid: uuid.v4(),
-        ...todo
+        ...todo,
       }
     })
 
@@ -59,7 +59,7 @@ const actions: ActionTree<ITodo.ITodoState, any> = {
     const filteredTodoTasks = todoTasks.filter((todo) => !todo.is_completed)
 
     commit(EMutations.SET_ALL_TODO_TASKS, filteredTodoTasks)
-  }
+  },
 }
 
 export default actions

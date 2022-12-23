@@ -34,7 +34,7 @@
   import {defineComponent} from 'vue'
 
   // HELPERS
-  import { imageUrl } from '@/utils/helpers';
+  import {imageUrl} from '@/utils/helpers'
 
   export default defineComponent({
     name: 'TodoCard',
@@ -42,15 +42,15 @@
     props: {
       todoTask: {
         type: Object,
-        default: () => ({})
-      }
+        default: () => ({}),
+      },
     },
 
     data() {
       return {
         crossIcon: imageUrl('/static/icons/ICON-CROSS.SVG'),
-        checkIcon: imageUrl('/static/icons/ICON-CHECK.SVG')
-      };
+        checkIcon: imageUrl('/static/icons/ICON-CHECK.SVG'),
+      }
     },
 
     methods: {
@@ -60,8 +60,8 @@
 
       removeTask() {
         this.$emit('remove-task', this.todoTask.uuid)
-      }
-    }
+      },
+    },
   })
 </script>
 

@@ -1,1 +1,2 @@
-export const imageUrl = (path: string): string => new URL(path, import.meta.url).href
+export const imageUrl = (path: string): string =>
+  new URL(path, import.meta.url).href

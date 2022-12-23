@@ -26,7 +26,7 @@
   import ThemeButton from '@/components/core/ThemeButton.vue'
 
   // HELPERS
-  import { imageUrl } from '@/utils/helpers';
+  import {imageUrl} from '@/utils/helpers'
 
   const {mapGetters} = createNamespacedHelpers('theme')
 
@@ -34,7 +34,7 @@
     name: 'AppLayout',
 
     components: {
-      ThemeButton
+      ThemeButton,
     },
 
     data() {
@@ -42,7 +42,7 @@
     },
 
     computed: {
-      ...mapGetters(['getIsDarkTheme'])
+      ...mapGetters(['getIsDarkTheme']),
     },
 
     methods: {
@@ -50,8 +50,8 @@
         return this.getIsDarkTheme
           ? imageUrl('/static/images/BG-MOBILE-DARK.svg')
           : imageUrl('/static/images/BG-MOBILE-LIGHT.svg')
-      }
-    }
+      },
+    },
   })
 </script>
 

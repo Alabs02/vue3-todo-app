@@ -3,7 +3,7 @@ import {ITheme} from '@/store/models'
 
 const initialState = (): ITheme.IThemeState => {
   return {
-    dark: true
+    dark: true,
   }
 }
 

@@ -10,7 +10,7 @@
   import {createNamespacedHelpers} from 'vuex'
 
   // HELPERS
-  import { imageUrl } from '@/utils/helpers';
+  import {imageUrl} from '@/utils/helpers'
 
   const {mapGetters, mapActions} = createNamespacedHelpers('theme')
 
@@ -24,7 +24,7 @@
         return this.getIsDarkTheme
           ? imageUrl('/static/icons/ICON-SUN.SVG')
           : imageUrl('/static/icons/ICON-MOON.SVG')
-      }
+      },
     },
 
     methods: {
@@ -36,8 +36,8 @@
         const currentTheme = this.getIsDarkTheme ? 'dark' : 'light'
 
         localStorage.setItem('theme', currentTheme)
-      }
-    }
+      },
+    },
   })
 </script>
 

@@ -1,4 +1,5 @@
 # Vue 3 + TypeScript + Vite + Tailwind
+
 Todo Application showcasing Vue Best Practices, Clean Design System and also using Vite and Tailwind the right way!
 
 <br />
@@ -20,20 +21,20 @@ npm run dev
 <br />
 
 ## Build
+
 ```bash
 npm run build
 ```
 
 ## ESLint and Prettier
 
-*After making changes, please run the following commands before you push*
+_After making changes, please run the following commands before you push_
 
 ```bash
 npm run lint
 ```
 
 **AND**
-
 
 ```bash
 npm run format

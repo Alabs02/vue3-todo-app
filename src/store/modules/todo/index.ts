@@ -10,7 +10,7 @@ const todoModule: Module<any, any> = {
   state,
   actions,
   getters,
-  mutations
+  mutations,
 }
 
 export default todoModule
