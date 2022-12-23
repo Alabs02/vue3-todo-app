@@ -1,0 +1,21 @@
+// FONT FAMILY
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+// LIBRARY
+@import 'library';
+
+// TAILWIND CSS
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body {
+}
+
+*,
+*::before,
+*::after {
+  @apply text-base font-rubik;
+  box-sizing: border-box;
+}

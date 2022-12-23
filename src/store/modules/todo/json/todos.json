@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "task": "Complete online JavaScript Course",
+      "is_completed": true
+    },
+    {
+      "task": "Jog around the park 3x",
+      "is_completed": false
+    },
+    {
+      "task": "10 minutes meditation",
+      "is_completed": false
+    },
+    {
+      "task": "Read for 1 hour",
+      "is_completed": false
+    },
+    {
+      "task": "Pick up grocceries",
+      "is_completed": false
+    },
+    {
+      "task": "Complete Todo App on Frontend Mentor",
+      "is_completed": false
+    }
+  ]
+}
