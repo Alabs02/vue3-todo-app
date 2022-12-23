@@ -1,27 +1,18 @@
 <template>
-  <app-wrapper>
-    <div name="app" id="app-root" :class="getIsDarkTheme ? 'dark' : 'light'">
-      <router-view></router-view>
-    </div>
-  </app-wrapper>
+  <div name="app" id="app-root" :class="getIsDarkTheme ? 'dark' : 'light'">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script lang="ts">
   import {defineComponent} from 'vue'
   import {createNamespacedHelpers} from 'vuex'
 
-  // COMPONENT
-  import AppWrapper from '@/components/core/AppWrapper.vue'
-
   const {mapActions, mapGetters} = createNamespacedHelpers('theme')
 
   export default defineComponent({
     name: 'App',
-
-    components: {
-      AppWrapper
-    },
-
+    
     computed: {
       ...mapGetters(['getIsDarkTheme'])
     },
